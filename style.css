@@ -1,0 +1,218 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+
+}
+
+.caixa-mae {
+    display: flex;
+    align-items: center;
+    padding: 100px;
+    justify-content: space-around;
+    height: 100vh;
+
+}
+
+
+
+
+button {
+    margin: none;
+    width: 200px;
+    height: 50px;
+    color: rgb(255, 255, 255);
+    background-color: #c51111;
+    font-weight: bold;
+    border-radius: 3px;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    margin-top: 30px;
+}
+
+
+button:hover {
+    background-color: #93030333;
+    transition: 0.5s ease-in-out;
+}
+
+.logo {
+    width: 200px;
+}
+
+.mario {
+    width: 500px;
+}
+
+.mario:hover {
+    transition: 0.5s ease-in-out;
+    filter: drop-shadow(15px 5px 15px #c51111);
+}
+
+.caixa-principal {
+    width: 40%;
+    color: white;
+
+}
+
+.caixa-video {
+    position: fixed;
+    z-index: -1;
+    top: 0;
+
+}
+
+video {
+    min-height: 100%;
+    min-width: 100%;
+    position: fixed;
+    top: 0;
+}
+
+.mascara {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
+}
+
+.link-whatsapp img {
+    width: 50px;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+
+}
+
+.link-whatsapp img:hover {
+    transition: 0.5s ease-in-out;
+    filter: drop-shadow(0px 0px 15px #55ff3b);
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+
+}
+
+.header img {
+    margin: 30px;
+    height: 60px;
+
+
+}
+
+.header a {
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.header a:hover {
+    color: #c51111;
+    font-size: 25px;
+    transition: 0.5s ease-in-out;
+}
+
+.formulario-fale-conosco {
+    background-color: white;
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+    position: fixed;
+    top: 50px;
+    left: 50px;
+    padding: 20px;
+    border-radius: 5px;
+    top: 30%;
+    left: -309px;
+    z-index: 1;
+    transition: 0.5s ease-in-out;
+}
+
+input {
+    height: 40px;
+    border-radius: 5px;
+    border: 1px, soldi, gray;
+    padding-left: 5px;
+    outline-color: #18D80f;
+
+}
+
+textarea {
+    width: 270px;
+    height: 100px;
+    border-radius: 5px;
+    border: 1px, soldi, gray;
+    padding-left: 5px;
+    outline-color: #18D80f;
+}
+
+
+.mascara-formulario {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
+    visibility: hidden;
+    transition: visibility 1s ease-in-out;
+}
+
+/*mediaquery 
+    max -> Valor menor que Npx, aplica o css do MIDIA
+    min -> Valor maior que Npx, aplica o css do MIDIA
+*/
+@media(max-width:1100px) {
+
+    /*Mensagem*/
+    p {
+        display: none
+    }
+
+    /* Caixa Mãe*/
+    .caixa-mae {
+        flex-direction: column;
+        padding: 10px;
+        align-items: center;
+        justify-content: flex-start;
+
+    }
+
+    .caixa-principal {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+    }
+
+    .mario {
+        width: 80vw;
+        height: auto;
+    }
+
+    .header {
+        margin: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .header a {
+        font-size: 14px;
+    }
+
+    .header img {
+        display: none;
+    }
+
+    
+}
